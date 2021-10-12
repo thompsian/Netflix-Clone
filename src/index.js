@@ -6,14 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import { FirebaseContext } from './context/firebase';
 
 const config = {
-    apiKey: '',
-    authDomain: '',
-    databaseURL: '',
-    projectId: '',
-    storageBucket: '',
-    messagingSenderId: '',
-    appId: '',
-}
+    apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
+    authDomain: "netflix-clone-thompsian.firebaseapp.com",
+    projectId: "netflix-clone-thompsian",
+    storageBucket: "netflix-clone-thompsian.appspot.com",
+    messagingSenderId: "540238326314",
+    appId: "1:540238326314:web:7a6a1940a1715ce680b153",
+    measurementId: "G-CZ82JEXEML"
+};
+  
 
 const firebase = window.firebase.initializeApp(config);
 
