@@ -10,9 +10,9 @@ export function BrowseContainer() {
     const [profile, setProfile] = useState({});
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
-
+    
     const { firebase } = useContext(FirebaseContext);
-
+    
     const user = {
         displayName: "Karl",
         photoURL: "1"
@@ -45,13 +45,14 @@ export function BrowseContainer() {
                                     <Header.Link>{user.displayName}</Header.Link>
                                 </Header.Group>
                                 <Header.Group>
-                                    <Header.Link onClick={() => firebase.auth().signOut()}>Sign out</Header.Link>
+                                    <Header.Link onClick={() => firebase.auth().signOut()}>
+                                        Sign out</Header.Link>
                                 </Header.Group>
                             </Header.Dropdown>
                         </Header.Profile>
                     </Header.Group>
                 </Header.Frame>
-
+                
                 <Header.Feature>
                     <Header.FeatureCallOut>Watch Joker Now</Header.FeatureCallOut>
                     <Header.Text>

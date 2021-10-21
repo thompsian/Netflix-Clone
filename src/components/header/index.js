@@ -1,10 +1,10 @@
-import React, {useState } from 'react';
+import React, { useState } from 'react';
 import { Link as ReachRouterLink } from 'react-router-dom';
 import { 
-    Group,
+    Group, 
     Background, 
     Link, 
-    Text,
+    Text, 
     Container, 
     Logo, 
     ButtonLink,
@@ -93,6 +93,6 @@ Header.Picture = function HeaderPicture({ src, ...restProps }) {
     return <Picture {...restProps} src={`/images/users/${src}.png`} />;
 }
 
-Header.Dropdown = function HeaderDropdown({ children, ...restProps }) {
+Header.Dropdown = function HeaderDRopdown({ children, ...restProps }) {
     return <Dropdown {...restProps}>{children}</Dropdown>;
 }

@@ -15,7 +15,6 @@ const config = {
     measurementId: "G-CZ82JEXEML"
 };
   
-
 const firebase = window.firebase.initializeApp(config);
 
 ReactDOM.render(
