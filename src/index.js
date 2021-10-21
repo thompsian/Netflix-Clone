@@ -5,6 +5,9 @@ import { App } from './App';
 import reportWebVitals from './reportWebVitals';
 import { FirebaseContext } from './context/firebase';
 
+import 'firebase/firestore';
+import 'firebase/auth';
+
 const config = {
     apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
     authDomain: "netflix-clone-thompsian.firebaseapp.com",
@@ -15,7 +18,7 @@ const config = {
     measurementId: "G-CZ82JEXEML"
 };
   
-const firebase = window.firebase.initializeApp(config);
+const firebase = window.firebase.initializeApp(config)
 
 ReactDOM.render(
   <React.StrictMode>
