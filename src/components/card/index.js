@@ -10,11 +10,12 @@ import {
     FeatureTitle,
     FeatureClose,
     Maturity,
-    Context,
+    Content,
     Meta,
     Entities,
     Item,
-    Image
+    Image,
+    FeatureText
 } from './styles/card';
 
 const FeatureContext = createContext();
@@ -67,11 +68,11 @@ Card.Item = function CardItem({ item, children, ...restProps }) {
         >
             {children}
         </Item>
-    )
+    );
 }
 
 Card.Image = function CardImage({ ...restProps }) {
-    return <Image {...restProps} />
+    return <Image {...restProps} />;
 }
 
 Card.Feature = function CardFeature({ children, category, ...restProps }) {
